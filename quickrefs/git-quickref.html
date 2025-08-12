@@ -121,12 +121,12 @@
             <strong>Common usage:</strong><br>
             <code>git diff</code> with no arguments will show <em>unstaged</em> changes.
             <br><br>
-            <code>git diff {filename}</code> will show <em>unstaged</em> changes to a given file.
+            <code>git diff &lt;filename&gt;</code> will show <em>unstaged</em> changes to a given file.
             <br><br>
             <code>git diff --staged</code> will show <em>staged but uncommitted</em> changes.
             <br><br>
-            <code>git diff --summary {commit}</code> will show a summary of changes since a given commit.
-            Substitute a commit ID from <code>git log</code> for <code>{commit}</code>.
+            <code>git diff --summary &lt;commit&gt;</code> will show a summary of changes since a given commit.
+            Substitute a commit ID from <code>git log</code> for <code>&lt;commit&gt;</code>.
             <hr>
             </div>
           </div>
@@ -137,21 +137,21 @@
         <div class="box">
           <div class="header">Making Local Commits</div>
           <div class="content">
-            <code>git add {files}</code> adds one or more files to the
+            <code>git add &lt;files&gt;</code> adds one or more files to the
             <em>staging area</em>, to be included in next commit.
             <hr />
             <code>git status</code> prints the status of your current
             repository, including what files are modified, and what is already
             staged using <code>git add</code> for the next commit.
             <hr />
-            <code>git restore {files}</code> restores changed files to their
+            <code>git restore &lt;files&gt;</code> restores changed files to their
             prior version.
             <strong
               >This is a destructive command and you can lose uncommitted
               work.</strong
             >
             <hr />
-            <code>git commit -m {message}</code> creates a new commit with all
+            <code>git commit -m &lt;message&gt;</code> creates a new commit with all
             files currently in staging area. A message should be passed to
             indicate the nature of the changes.
             <hr />
